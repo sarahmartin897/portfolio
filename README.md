@@ -19,6 +19,8 @@ Below are five workflows I designed and built. Company names, employee details a
 
 **Tools:** Claude, Excel, Python scripts, bank and armored car reports
 
+▶️ **[See the working demo with sample data](https://github.com/sarahmartin897/deposit-reconciliation-demo)**
+
 ---
 
 ## 2. Payroll Validation Check
