@@ -4,6 +4,7 @@ type Project = {
   built: string[];
   result: string;
   tools: string[];
+  demo?: string;
 };
 
 const projects: Project[] = [
@@ -19,6 +20,7 @@ const projects: Project[] = [
     result:
       "Turned a scattered, manual process into a repeatable daily routine with one master log and a weekly open-items report management can act on. Also led to a simple write-off policy for small change variances, which leadership approved.",
     tools: ["Claude", "Excel", "Python scripts", "Bank and armored car reports"],
+    demo: "https://github.com/sarahmartin897/deposit-reconciliation-demo",
   },
   {
     title: "Payroll Validation Check",
@@ -134,6 +136,14 @@ function App() {
                 <p className="mb-4 leading-relaxed text-zinc-700">
                   {p.result}
                 </p>
+                {p.demo && (
+                  <a
+                    className="mb-4 inline-block rounded-full bg-zinc-900 px-4 py-2 text-sm text-white hover:bg-zinc-700"
+                    href={p.demo}
+                  >
+                    See the working demo →
+                  </a>
+                )}
                 <div className="flex flex-wrap gap-2">
                   {p.tools.map((t) => (
                     <span
